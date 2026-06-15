@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto de Extensão em Supply Chain 2026.1</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm 12mm;
+            background-color: #f4f6f8;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #2c3e50;
+            background-color: #f4f6f8;
+            line-height: 1.5;
+            font-size: 10.5pt;
+        }
+        
+        .slide-container {
+            background: #ffffff;
+            padding: 30px 40px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            page-break-inside: avoid;
+            position: relative;
+            min-height: 240mm; /* Simulates slide format height within A4 margins */
+        }
+        
+        .header-bar {
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+        }
+        
+        .institution {
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #7f8c8d;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .slide-title {
+            font-size: 18pt;
+            color: #2c3e50;
+            margin: 5px 0 0 0;
+            font-weight: 700;
+        }
+        
+        /* Cover Slide Specifics */
+        .cover-slide {
+            text-align: center;
+            padding-top: 60px;
+        }
+        
+        .cover-title {
+            font-size: 26pt;
+            color: #1a365d;
+            margin-bottom: 10px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        .cover-subtitle {
+            font-size: 14pt;
+            color: #4a5568;
+            margin-bottom: 50px;
+            font-weight: 400;
+        }
+        
+        .cover-meta {
+            margin-top: 60px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 30px;
+            display: table;
+            width: 100%;
+        }
+        
+        .meta-row {
+            display: table-row;
+        }
+        
+        .meta-cell {
+            display: table-cell;
+            padding: 8px 15px;
+            font-size: 11pt;
+        }
+        
+        .meta-label {
+            font-weight: bold;
+            color: #4a5568;
+            text-align: right;
+            width: 40%;
+        }
+        
+        .meta-value {
+            text-align: left;
+            color: #2d3748;
+        }
+        
+        /* Content Elements */
+        p {
+            margin: 0 0 15px 0;
+        }
+        
+        ul {
+            margin: 0 0 20px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            font-size: 11pt;
+            line-height: 1.6;
+        }
+        
+        .highlight-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 10pt;
+        }
+        
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        th {
+            background-color: #2c3e50;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            background-color: #2f855a;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 9pt;
+        }
+        
+        .footer-page {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            right: 40px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 10px;
+            font-size: 8pt;
+            color: #a0aec0;
+            display: table;
+            width: calc(100% - 80px);
+        }
+        
+        .footer-left {
+            display: table-cell;
+            text-align: left;
+        }
+        
+        .footer-right {
+            display: table-cell;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: CAPA -->
+    <div class="slide-container cover-slide">
+        <p class="institution">UNICARIOCA &bull; Centro Universitário</p>
+        <h1 class="cover-title" style="margin-top: 40px;">PROJETO DE EXTENSÃO EM SUPPLY CHAIN</h1>
+        <div class="cover-subtitle">Semestre 2026/1</div>
+        
+        <div class="highlight-box" style="max-width: 600px; margin: 40px auto; text-align: center; border-left: none; border-top: 3px solid #3182ce;">
+            <strong>Tema Central:</strong> Criação de empresa de transporte de bebidas para atendimento terceirizado de escoamento de produção fabril – Expansão da Frota e Impacto Logístico.
+        </div>
+        
+        <div class="cover-meta">
+            <div class="meta-row">
+                <div class="meta-cell meta-label">Autor:</div>
+                <div class="meta-cell meta-value">Cesar Roberto Barbosa Mendes</div>
+            </div>
+            <div class="meta-row">
+                <div class="meta-cell meta-label">Instituição:</div>
+                <div class="meta-cell meta-value">Centro Universitário Carioca – Polos EAD</div>
+            </div>
+            <div class="meta-row">
+                <div class="meta-cell meta-label">Professor Orientador:</div>
+                <div class="meta-cell meta-value">José Luís A. Dutra</div>
+            </div>
+        </div>
+        
+        <div class="footer-page">
+            <div class="footer-left">SM261301 - Projeto de Extensão</div>
+            <div class="footer-right">Slide 1</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: INTRODUÇÃO E METODOLOGIA -->
+    <div class="slide-container">
+        <div class="header-bar">
+            <p class="institution">UNICARIOCA</p>
+            <h2 class="slide-title">Introdução &amp; Metodologia</h2>
+        </div>
+        
+        <div class="highlight-box">
+            <strong>Abordagem Prática:</strong> Implementação de uma empresa terceirizada com foco no escoamento de produção fabril para centros de distribuição na cidade e interior do estado do Rio de Janeiro.
+        </div>
+        
+        <ul>
+            <li><strong>Diagnóstico Inicial:</strong> Análise e estruturação de uma frota de partida composta por 20 carretas.</li>
+            <li><strong>Planejamento Estratégico:</strong> Definição de metas de expansão através da aquisição de novos veículos e contratação em massa de pessoal.</li>
+            <li><strong>Capacitação e Tecnologia:</strong> Aplicação prática de softwares de logística avançados e treinamento intensivo da equipe operacional.</li>
+            <li><strong>Controle de Qualidade:</strong> Monitoramento trimestral rigoroso dos indicadores chave de desempenho (KPIs).</li>
+        </ul>
+        
+        <div class="footer-page">
+            <div class="footer-left">Cesar Roberto Barbosa Mendes &bull; Supply Chain 2026.1</div>
+            <div class="footer-right">Slide 2</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: METAS E OBJETIVOS -->
+    <div class="slide-container">
+        <div class="header-bar">
+            <p class="institution">UNICARIOCA</p>
+            <h2 class="slide-title">Objetivos &amp; Metas de Escoamento</h2>
+        </div>
+        
+        <p>O foco principal do projeto reside na escalabilidade e ganho de tração no mercado logístico fluminense:</p>
+        
+        <div style="display: table; width: 100%; margin-top: 30px;">
+            <div style="display: table-row;">
+                <div style="display: table-cell; width: 50%; padding-right: 15px;">
+                    <div style="background: #f7fafc; padding: 20px; border-radius: 6px; border-top: 4px solid #4a5568;">
+                        <h3 style="margin-top: 0; color: #2d3748;">Objetivo Inicial</h3>
+                        <p style="font-size: 20pt; font-weight: bold; color: #2b6cb0; margin: 10px 0;">1 Milhão</p>
+                        <p style="margin: 0; color: #718096;">de caixas transportadas por semana na fase de arranque do projeto.</p>
+                    </div>
+                </div>
+                <div style="display: table-cell; width: 50%; padding-left: 15px;">
+                    <div style="background: #f0fff4; padding: 20px; border-radius: 6px; border-top: 4px solid #38a169;">
+                        <h3 style="margin-top: 0; color: #276749;">Meta Final</h3>
+                        <p style="font-size: 20pt; font-weight: bold; color: #2f855a; margin: 10px 0;">2 Milhões</p>
+                        <p style="margin: 0; color: #4a5568;">de caixas transportadas por semana após o plano de expansão da frota (+100%).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-page">
+            <div class="footer-left">Cesar Roberto Barbosa Mendes &bull; Supply Chain 2026.1</div>
+            <div class="footer-right">Slide 3</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: RESULTADOS POR INDICADOR -->
+    <div class="slide-container">
+        <div class="header-bar">
+            <p class="institution">UNICARIOCA</p>
+            <h2 class="slide-title">Resultados por Indicador</h2>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Indicador</th>
+                    <th>Meta Inicial</th>
+                    <th>Resultado Final</th>
+                    <th>Evolução</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Produtividade Semanal</strong></td>
+                    <td>1M caixas</td>
+                    <td>2M caixas</td>
+                    <td><span class="badge">+100%</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Eficiência Operacional</strong></td>
+                    <td>85%</td>
+                    <td>95%</td>
+                    <td><span class="badge" style="background-color: #3182ce;">+10 pp</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Frota</strong></td>
+                    <td>20 carretas</td>
+                    <td>40 veículos</td>
+                    <td><span class="badge">+100%</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Pessoas</strong></td>
+                    <td>80 funcionários</td>
+                    <td>160 funcionários</td>
+                    <td><span class="badge">+100%</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Qualidade do Serviço</strong></td>
+                    <td>70% satisfação</td>
+                    <td>90% satisfação</td>
+                    <td><span class="badge" style="background-color: #3182ce;">+20 pp</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Impacto Social</strong></td>
+                    <td>80 empregos</td>
+                    <td>160 empregos</td>
+                    <td><span class="badge">+100%</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="footer-page">
+            <div class="footer-left">Cesar Roberto Barbosa Mendes &bull; Supply Chain 2026.1</div>
+            <div class="footer-right">Slide 4</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: CONCLUSÃO -->
+    <div class="slide-container">
+        <div class="header-bar">
+            <p class="institution">UNICARIOCA</p>
+            <h2 class="slide-title">Conclusão</h2>
+        </div>
+        
+        <div style="background-color: #f7fafc; padding: 25px; border-radius: 6px; margin-bottom: 25px;">
+            <ul style="margin-bottom: 0;">
+                <li><strong>Metas Atingidas:</strong> O plano estratégico foi executado com sucesso, alcançando integralmente o objetivo de dobrar os envios semanais para 2 milhões de caixas.</li>
+                <li><strong>Otimização Operacional:</strong> Houve um aumento substancial na eficiência interna e nos níveis de satisfação e fidelização dos clientes parceiros.</li>
+                <li><strong>Geração de Valor Social:</strong> Impacto altamente positivo no mercado de trabalho regional através da criação direta de empregos estáveis e fomento da economia local.</li>
+            </ul>
+        </div>
+        
+        <div class="highlight-box" style="background-color: #f0fff4; border-left-color: #38a169; text-align: center; font-size: 12pt;">
+            <em>"A logística demonstra-se como um vetor de transformação socioeconômica quando planejada e executada sob diretrizes estratégicas integradas."</em>
+        </div>
+        
+        <div class="footer-page">
+            <div class="footer-left">Cesar Roberto Barbosa Mendes &bull; Supply Chain 2026.1</div>
+            <div class="footer-right">Slide 5</div>
+        </div>
+    </div>
+
+</body>
+</html>
